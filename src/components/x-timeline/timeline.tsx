@@ -37,7 +37,7 @@ const TRENDING = [
 
 const SUGGESTED = [
   { name: "David Goggins", handle: "davidgoggins", color: "#f91880" },
-  { name: "Alex Hormozi", handle: "alexhormozi", color: "#1d9bf0" },
+  { name: "Sam Altman", handle: "sama", color: "#1d9bf0" },
   { name: "Naval", handle: "naval", color: "#7856ff" },
 ];
 
