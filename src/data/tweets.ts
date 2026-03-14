@@ -1693,6 +1693,72 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     verified: true,
     bookmarked: false,
   },
+  // Delusion for success
+  {
+    handle: "elonmusk",
+    name: "Elon Musk",
+    content:
+      "When I started SpaceX, I thought the chance of success was less than 10%.\n\nI accepted I would probably lose everything. But some things are important enough to try even if the probable outcome is failure.\n\nRational people told me I was insane. They were right. But here we are.",
+    likes: 186000,
+    retweets: 52400,
+    replies: 9800,
+    views: 22000000,
+    time: "2h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "stevejobs",
+    name: "Steve Jobs",
+    content:
+      "The people who are crazy enough to think they can change the world are the ones who do.\n\nEvery breakthrough in history was first dismissed as delusional. The telephone. The airplane. The personal computer.\n\nIf your ambition doesn't scare people, it's not big enough.",
+    likes: 174000,
+    retweets: 48600,
+    replies: 7200,
+    views: 16800000,
+    time: "5h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "kanye",
+    name: "Ye",
+    content:
+      "People say I have a big ego. No — I have a big vision. There's a difference.\n\nIf you don't believe you're the best at what you do, why would anyone else? Delusion is just confidence that hasn't been proven yet.\n\nEvery building that exists was once a delusion in someone's mind.",
+    likes: 142000,
+    retweets: 41200,
+    replies: 12400,
+    views: 14200000,
+    time: "8h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "conaboron",
+    name: "Conor McGregor",
+    content:
+      "If you have a clear vision of where you want to go, the rest of it is much more easily navigated.\n\nI told everyone I'd be a two-weight world champion when I was on welfare. They laughed.\n\nDelusion? Or just seeing the finish line before anyone else could?",
+    likes: 118000,
+    retweets: 34200,
+    replies: 5800,
+    views: 9400000,
+    time: "11h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "naval",
+    name: "Naval",
+    content:
+      "All great people started with a belief that was irrational at the time.\n\nBezos quit D.E. Shaw to sell books online. Musk bet his last $35M on rockets. Jobs built computers in a garage.\n\nThe line between delusion and vision is only visible in hindsight. Bet on yourself before the evidence arrives.",
+    likes: 94200,
+    retweets: 28400,
+    replies: 4200,
+    views: 7200000,
+    time: "15h",
+    verified: true,
+    bookmarked: false,
+  },
 ];
 
 export const tweets: Tweet[] = seededShuffle(
