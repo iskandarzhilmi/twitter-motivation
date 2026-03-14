@@ -806,7 +806,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "paulg",
     name: "Paul Graham",
     content:
-      "Many more people could try to do great work than actually do.\n\nWhat holds them back? A combination of modesty and fear.\n\nIt seems presumptuous to try. It seems hard. Surely you'd fail.\n\nBut lots of people have worse problems than trying and failing. The discoveries are out there. Why not you?",
+      "Many more people could try to do great work than actually do.\n\nWhat holds them back? Modesty and fear.\n\nIt seems presumptuous to try. It seems hard. Surely you'd fail.\n\nBut lots of people have worse problems than trying and failing. The discoveries are out there. Why not you?",
     likes: 118000,
     retweets: 38200,
     replies: 5600,
@@ -832,7 +832,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "paulg",
     name: "Paul Graham",
     content:
-      "School trained you to win by hacking the test.\n\nYou can't do great work that way. You can't trick God.\n\nIn school they tell you the problems and they're always soluble. In real life you have to figure out what the problems even are — and you might never know if they're soluble at all.",
+      "School trained you to win by hacking the test.\n\nYou can't do great work that way. You can't trick God.\n\nIn school they tell you the problems and they're always soluble. In real life you have to figure out what the problems are — and you might never know if they're soluble at all.",
     likes: 93100,
     retweets: 26800,
     replies: 3900,
@@ -911,7 +911,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "sama",
     name: "Sam Altman",
     content:
-      "The biggest economic misunderstanding:\n\nPeople think high salaries make you rich.\n\nAlmost no one on the Forbes list got there with a salary. You get rich by owning things that increase rapidly in value.\n\nTime scales linearly. Equity scales exponentially.\n\nStop selling hours. Start owning assets.",
+      "The biggest economic misunderstanding:\n\nPeople think high salaries make you rich.\n\nAlmost no one on the Forbes list got there with a salary. You get rich owning things that grow rapidly in value.\n\nTime scales linearly. Equity scales exponentially.\n\nStop selling hours. Own assets.",
     likes: 134000,
     retweets: 41200,
     replies: 6800,
@@ -937,7 +937,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "sama",
     name: "Sam Altman",
     content:
-      "Most people are externally driven — they do things to impress others.\n\nThis guarantees two outcomes:\n1. You'll work on consensus ideas\n2. You'll get risk calculations wrong\n\nThe most successful people I know are internally driven. They do it to impress themselves.\n\nThat's the only fuel that doesn't run out.",
+      "Most people are externally driven — they do things to impress others.\n\nThis guarantees two things:\n1. You'll work on consensus ideas\n2. You'll miscalculate risk\n\nThe most successful people are internally driven. They do it to impress themselves.\n\nThat's the only fuel that lasts.",
     likes: 89200,
     retweets: 24600,
     replies: 3700,
@@ -950,7 +950,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "sama",
     name: "Sam Altman",
     content:
-      "You can reach the 90th percentile by working smart OR hard.\n\nBut the 99th percentile requires both.\n\nAt that level you're competing with talented people who also have great ideas AND are willing to outwork everyone.\n\nWork stamina is one of the biggest predictors of long-term success. Full stop.",
+      "You can reach the 90th percentile by working smart OR hard.\n\nBut the 99th percentile requires both.\n\nAt that level you're competing with talented people who have great ideas AND are willing to outwork everyone.\n\nWork stamina is one of the biggest predictors of long-term success.",
     likes: 67500,
     retweets: 18700,
     replies: 2900,
@@ -1068,7 +1068,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "naval",
     name: "Naval",
     content:
-      "A leveraged worker can outproduce a non-leveraged worker by 1,000x.\n\nForget 10x programmers. 1,000x programmers exist.\n\nWith leverage, judgment matters far more than hours worked.\n\nIt's not about how hard you work. It's about knowing what to do, who to do it with, and when to do it.",
+      "A leveraged worker can outproduce a non-leveraged worker by 1,000x.\n\nForget 10x programmers. 1,000x programmers exist.\n\nWith leverage, judgment matters far more than hours worked.\n\nIt's not how hard you work. It's knowing what to do, who to do it with, and when.",
     likes: 96800,
     retweets: 28900,
     replies: 4100,
@@ -1110,7 +1110,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "MJDeMarco",
     name: "MJ DeMarco",
     content:
-      "You weren't born to slave 9-to-5, Monday through Friday, pay bills, and then die.\n\nBut that's exactly what you've been SCRIPTED to do.\n\nGo to school. Get a job. Save 10%. Trust Wall Street. Retire at 65. Hope you're alive to enjoy it.\n\nThat's not a life plan. That's a slow death sentence.",
+      "You weren't born to slave 9-to-5, pay bills, and die.\n\nBut that's exactly what you've been SCRIPTED to do.\n\nGo to school. Get a job. Save 10%. Trust Wall Street. Retire at 65. Hope you're alive to enjoy it.\n\nThat's not a life plan. That's a slow death sentence.",
     likes: 108000,
     retweets: 31200,
     replies: 4600,
@@ -1123,7 +1123,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "MJDeMarco",
     name: "MJ DeMarco",
     content:
-      "Trading time for money is temporal prostitution.\n\nWhen you're sleeping, you're not earning. Vacation? Not earning. Sick? Not earning.\n\nYour inputs are chained to your outputs.\n\nYou don't need a better salary. You need a business with permissionless leverage that earns while you sleep.",
+      "Trading time for money is temporal prostitution.\n\nWhen you're sleeping, you're not earning. Vacation? Not earning. Sick? Not earning.\n\nYour inputs are chained to your outputs.\n\nYou don't need a better salary. You need a business with leverage that earns while you sleep.",
     likes: 84500,
     retweets: 22800,
     replies: 3200,
@@ -1136,7 +1136,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "MJDeMarco",
     name: "MJ DeMarco",
     content:
-      "Want to know why everyone is so miserable?\n\nThey've given up.\n\nTheir dreams died the day someone told them \"that's not realistic.\"\n\nNow they're stalked by the ghosts of those dead dreams every Sunday night when Monday looms.\n\nPursuing the dream IS the dream. The process is the point.",
+      "Want to know why everyone is miserable?\n\nThey've given up.\n\nTheir dreams died the day someone told them \"that's not realistic.\"\n\nNow they're stalked by the ghosts of dead dreams every Sunday night when Monday looms.\n\nPursuing the dream IS the dream. The process is the point.",
     likes: 72100,
     retweets: 19400,
     replies: 2800,
@@ -1188,7 +1188,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "MJDeMarco",
     name: "MJ DeMarco",
     content:
-      "Every successful entrepreneur has a \"Fuck This\" moment.\n\nThe moment where mediocre comfort finally becomes more painful than the fear of change.\n\nYou don't ease into freedom. You snap.\n\nInterest becomes commitment. Planning becomes action. And that last paycheck becomes your last.",
+      "Every successful entrepreneur has a \"Fuck This\" moment.\n\nThe moment where mediocre comfort becomes more painful than the fear of change.\n\nYou don't ease into freedom. You snap.\n\nInterest becomes commitment. Planning becomes action. And that last paycheck becomes your last.",
     likes: 126000,
     retweets: 38400,
     replies: 5800,
@@ -1228,7 +1228,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "asmartbear",
     name: "Jason Cohen",
     content:
-      "\"Simple\" and \"Complete\" are not contradictions.\n\nFirst Snapchat: tap to take photo, send, it disappears. That's it.\nFirst WhatsApp: just a status message.\nFirst Dropbox: one folder that syncs.\nFirst Twitter: 140 characters. No replies. No retweets.\n\nAll simple. All complete. All billion-dollar.",
+      "\"Simple\" and \"Complete\" aren't contradictions.\n\nFirst Snapchat: tap, send, it disappears. That's it.\nFirst WhatsApp: just a status message.\nFirst Dropbox: one folder that syncs.\nFirst Twitter: 140 characters. No replies. No retweets.\n\nAll simple. All complete. All billion-dollar.",
     likes: 67800,
     retweets: 18100,
     replies: 2600,
@@ -1307,7 +1307,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "levelsio",
     name: "Pieter Levels",
     content:
-      "Your enemy is perfection.\n\nBuild fast. Build minimal. Launch before you're ready.\n\nThe product you're embarrassed to ship today is the product you'll be proud you shipped in 6 months.\n\nEvery day you spend polishing is a day you're not learning from real users.\n\nShip. Learn. Iterate. Repeat.",
+      "Your enemy is perfection.\n\nBuild fast. Build minimal. Launch before you're ready.\n\nThe product you're embarrassed to ship today is the one you'll be proud you shipped in 6 months.\n\nEvery day polishing is a day you're not learning from real users.\n\nShip. Learn. Iterate. Repeat.",
     likes: 82400,
     retweets: 23100,
     replies: 3300,
@@ -1386,7 +1386,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "WalterIsaacson",
     name: "Walter Isaacson",
     content:
-      "\"I was born for a storm, and a calm does not suit me.\"\n\nMusk thrives on crises. The strain keeps him awake, makes him vomit — but also energizes him.\n\nMost people avoid chaos. The ones who change the world run toward it.\n\nThe question isn't \"can you handle pressure?\" It's \"does pressure fuel you?\"",
+      "\"I was born for a storm, and a calm does not suit me.\"\n\nMusk thrives on crises. The strain makes him vomit — but energizes him.\n\nMost people avoid chaos. The ones who change the world run toward it.\n\nThe question isn't \"can you handle pressure?\" It's \"does pressure fuel you?\"",
     likes: 148000,
     retweets: 44200,
     replies: 6400,
@@ -1413,7 +1413,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "JamesClear",
     name: "James Clear",
     content:
-      "1% better each day for one year = 37x better.\n1% worse each day for one year = nearly zero.\n\nHabits are the compound interest of self-improvement.\n\nYou don't notice the difference on any given day. But the gap between who you are and who you could be is built entirely in those tiny daily choices.",
+      "1% better each day for one year = 37x better.\n1% worse each day for one year = nearly zero.\n\nHabits are the compound interest of self-improvement.\n\nYou don't notice it on any given day. But the gap between who you are and who you could be is built in those tiny daily choices.",
     likes: 162000,
     retweets: 48400,
     replies: 7200,
@@ -1426,7 +1426,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "JamesClear",
     name: "James Clear",
     content:
-      "You've been running for a month. No visible change.\nYou've been writing for 6 months. No audience.\nYou've been building for a year. No traction.\n\nYou're in the Valley of Disappointment.\n\nYou haven't failed. You just haven't crossed the Plateau of Latent Potential yet.\n\nThe ice cube doesn't melt at 31°. It melts at 32°. Keep going.",
+      "Running for a month. No visible change.\nWriting for 6 months. No audience.\nBuilding for a year. No traction.\n\nYou're in the Valley of Disappointment.\n\nYou haven't failed. You haven't crossed the Plateau of Latent Potential yet.\n\nThe ice cube melts at 32°, not 31°. Keep going.",
     likes: 138000,
     retweets: 39200,
     replies: 5800,
@@ -1439,7 +1439,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "JamesClear",
     name: "James Clear",
     content:
-      "Your outcomes are a lagging measure of your habits.\n\nYour net worth → lagging measure of financial habits.\nYour weight → lagging measure of eating habits.\nYour knowledge → lagging measure of learning habits.\n\nYou get what you repeat.\n\nBe far more concerned with your current trajectory than your current results.",
+      "Your outcomes are a lagging measure of your habits.\n\nNet worth → lagging measure of financial habits.\nWeight → lagging measure of eating habits.\nKnowledge → lagging measure of learning habits.\n\nYou get what you repeat.\n\nCare more about your trajectory than your current results.",
     likes: 98400,
     retweets: 28800,
     replies: 4100,
@@ -1452,7 +1452,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "JamesClear",
     name: "James Clear",
     content:
-      "Forget about goals. Focus on systems.\n\nGoal: \"I want to lose 20 pounds.\"\nSystem: \"I eat protein at every meal and train 4x/week.\"\n\nGoals are about the results you want. Systems are about the processes that lead to those results.\n\nWinners and losers have the same goals. The difference is always the system.",
+      "Forget goals. Focus on systems.\n\nGoal: \"I want to lose 20 pounds.\"\nSystem: \"I eat protein at every meal and train 4x/week.\"\n\nGoals are about results. Systems are about the processes that lead to results.\n\nWinners and losers share the same goals. The difference is the system.",
     likes: 148000,
     retweets: 44200,
     replies: 6400,
@@ -1465,7 +1465,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "JamesClear",
     name: "James Clear",
     content:
-      "Habits are a double-edged sword.\n\nGood habits make time your ally.\nBad habits make time your enemy.\n\nStress compounds. Negative thoughts compound. Outrage compounds.\n\nBut so does productivity. Knowledge. Relationships.\n\nCompounding works in both directions. You're choosing which direction every single day.",
+      "Habits are a double-edged sword.\n\nGood habits make time your ally.\nBad habits make time your enemy.\n\nStress compounds. Negative thoughts compound. Outrage compounds.\n\nBut so does productivity. Knowledge. Relationships.\n\nCompounding works both ways. You choose which one every day.",
     likes: 89200,
     retweets: 25400,
     replies: 3600,
@@ -1478,7 +1478,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "JamesClear",
     name: "James Clear",
     content:
-      "The 4 Laws of Behavior Change:\n\n1. Make it obvious (cue)\n2. Make it attractive (craving)\n3. Make it easy (response)\n4. Make it satisfying (reward)\n\nTo break a bad habit, invert them:\n\nMake it invisible. Unattractive. Difficult. Unsatisfying.\n\nEvery behavior change problem has a solution in these four laws.",
+      "The 4 Laws of Behavior Change:\n\n1. Make it obvious (cue)\n2. Make it attractive (craving)\n3. Make it easy (response)\n4. Make it satisfying (reward)\n\nTo break a bad habit, invert them:\n\nMake it invisible. Unattractive. Difficult. Unsatisfying.\n\nEvery behavior problem maps to these.",
     likes: 184000,
     retweets: 56200,
     replies: 8400,
@@ -1492,7 +1492,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "muscleforlife",
     name: "Mike Matthews",
     content:
-      "You don't rise to the level of your goals. You fall to the level of your systems.\n\nJohn Wooden coached 15 years in obscurity before winning 10 championships in 12 years.\n\nHe wasn't \"suddenly\" great. He was building the system that made greatness inevitable.\n\nGoals are the destination. Systems are the vehicle.",
+      "You don't rise to the level of your goals. You fall to the level of your systems.\n\nWooden coached 15 years in obscurity before winning 10 titles in 12.\n\nHe wasn't \"suddenly\" great. He built the system that made greatness inevitable.\n\nGoals are destinations. Systems are vehicles.",
     likes: 67200,
     retweets: 18400,
     replies: 2600,
@@ -1505,7 +1505,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "muscleforlife",
     name: "Mike Matthews",
     content:
-      "1% better per day = 38x better in a year.\n\nNot a motivational platitude. Actual math.\n\nMost wins aren't flash floods. They're raindrops trickling into a reservoir until it overflows.\n\nStart easy. Improve gradually. Expect failure.\n\nConsistency compounds. In the gym. In business. In life.",
+      "1% better per day = 38x better in a year.\n\nNot a platitude. Actual math.\n\nMost wins aren't flash floods. They're raindrops trickling into a reservoir until it overflows.\n\nStart easy. Improve gradually. Expect failure.\n\nConsistency compounds. In the gym. In business. In life.",
     likes: 81400,
     retweets: 22800,
     replies: 3200,
@@ -1518,7 +1518,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "muscleforlife",
     name: "Mike Matthews",
     content:
-      "Stop relying on willpower. Design your environment instead.\n\nChanging one line on a government form moved organ donation from 4% to 99%.\n\nWant to eat better? Put healthy food at eye level.\nWant to train more? Lay out your gym clothes the night before.\n\nRemove steps from good habits. Add steps to bad ones.",
+      "Stop relying on willpower. Design your environment.\n\nChanging one line on a form moved organ donation from 4% to 99%.\n\nWant to eat better? Put healthy food at eye level.\nWant to train? Lay out gym clothes the night before.\n\nRemove steps from good habits. Add steps to bad ones.",
     likes: 52800,
     retweets: 13600,
     replies: 1800,
@@ -1531,7 +1531,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "muscleforlife",
     name: "Mike Matthews",
     content:
-      "\"You're not good enough to be disappointed yet.\"\n\n— Dan John, to every new athlete\n\nFailing at something doesn't make you a failure. It makes you normal.\n\nWhat separates people who transform their bodies from people who don't isn't perfection.\n\nIt's how fast they get back on track after falling off.",
+      "\"You're not good enough to be disappointed yet.\"\n\n— Dan John\n\nFailing doesn't make you a failure. It makes you normal.\n\nWhat separates people who transform their bodies from those who don't isn't perfection.\n\nIt's how fast they get back on track after falling off.",
     likes: 58400,
     retweets: 15200,
     replies: 2100,
@@ -1544,7 +1544,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "muscleforlife",
     name: "Mike Matthews",
     content:
-      "The fitness industry doesn't want you to know this:\n\nYou don't need exotic diets.\nYou don't need crushing workouts.\nYou don't need expensive supplements.\nYou don't need to live in the gym.\n\nYou need progressive overload, adequate protein, a calorie target, and the discipline to show up 4x/week for years.\n\nThat's the secret.",
+      "The fitness industry doesn't want you to know this:\n\nYou don't need exotic diets.\nYou don't need crushing workouts.\nYou don't need pricey supplements.\nYou don't need to live in the gym.\n\nYou need progressive overload, protein, a calorie target, and showing up 4x/week for years.",
     likes: 112000,
     retweets: 33400,
     replies: 4800,
@@ -1572,7 +1572,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "andrewxroas",
     name: "andrewxroas",
     content:
-      "After 7 failed apps, the single thing that changed everything:\n\nI stopped obsessing over the product and started obsessing over distribution.\n\n2024: $2K total from apps.\n2025: $1.3M from apps.\n\nSame skill level. Same person. Just aimed at the right lever.\n\nDistribution is the lever.",
+      "After 7 failed apps, the one thing that changed everything:\n\nI stopped obsessing over product and started obsessing over distribution.\n\n2024: $2K total from apps.\n2025: $1.3M from apps.\n\nSame skill level. Same person. Just aimed at the right lever.\n\nDistribution is the lever.",
     likes: 112000,
     retweets: 33600,
     replies: 4800,
@@ -1586,7 +1586,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "musamanzz",
     name: "Musa",
     content:
-      "If you're elite at getting attention, you can scale almost anything.\n\n2M active users in 10 months. $1.5M+ revenue. All organic content. Zero paid ads.\n\nOne skilled operator with the right tools beats a team of 5,000 mediocre ones.\n\nMaster watch time and the algorithm works for you 24/7.",
+      "If you're elite at getting attention, you can scale almost anything.\n\n2M active users in 10 months. $1.5M+ revenue. All organic. Zero paid ads.\n\nOne skilled operator with the right tools beats a team of 5,000 mediocre ones.\n\nMaster watch time and the algorithm works for you 24/7.",
     likes: 79800,
     retweets: 22600,
     replies: 3100,
@@ -1628,7 +1628,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "jackfriks",
     name: "Jack Friks",
     content:
-      "<2 years ago I couldn't code at all.\n\nNow I have multiple apps with 100K+ downloads. The tool I built to market my apps makes 5-10x more than the apps themselves.\n\nEverything compounds. One good launch can change your life.\n\nThe gap isn't talent. It's showing up when it's boring, slow, and nobody cares.",
+      "<2 years ago I couldn't code.\n\nNow I have apps with 100K+ downloads. The tool I built to market them makes 5-10x more than the apps.\n\nEverything compounds. One good launch can change your life.\n\nThe gap isn't talent. It's showing up when it's boring, slow, and nobody cares.",
     likes: 64200,
     retweets: 17800,
     replies: 2400,
@@ -1642,7 +1642,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "stevejobs",
     name: "Steve Jobs",
     content:
-      "Remembering that I'll be dead soon is the most important tool I've ever encountered to help me make the big choices in life.\n\nAlmost everything — all external expectations, all pride, all fear of embarrassment or failure — falls away in the face of death.\n\nYou are already naked. There is no reason not to follow your heart.",
+      "Remembering I'll be dead soon is the most important tool I've found for making the big choices in life.\n\nAlmost everything — all expectations, all pride, all fear of failure — falls away in the face of death.\n\nYou are already naked. There is no reason not to follow your heart.",
     likes: 198000,
     retweets: 62400,
     replies: 8200,
@@ -1655,7 +1655,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "senaboreca",
     name: "Seneca",
     content:
-      "It is not that we have a short time to live, but that we waste a great deal of it.\n\nLife is long enough, and a sufficiently generous amount has been given to us for the highest achievements if it were all well invested.\n\nYou act like mortals in all that you fear, and like immortals in all that you desire.",
+      "It is not that we have a short time to live, but that we waste much of it.\n\nLife is long enough, and a generous amount has been given to us for the highest achievements if well invested.\n\nYou act like mortals in all that you fear, and like immortals in all you desire.",
     likes: 142000,
     retweets: 44800,
     replies: 6100,
@@ -1668,7 +1668,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "JeffBezos",
     name: "Jeff Bezos",
     content:
-      "I knew that when I was 80, I would never regret having tried this. I would never regret trying to participate in this thing called the Internet that I thought was going to be a really big deal.\n\nI knew that if I failed, I wouldn't regret that. But I knew the one thing I might regret is not ever having tried.",
+      "I knew that at 80, I'd never regret having tried this. I'd never regret trying to participate in this thing called the Internet that I thought was going to be a really big deal.\n\nIf I failed, I wouldn't regret that. But the one thing I might regret is not ever having tried.",
     likes: 134000,
     retweets: 38200,
     replies: 5400,
@@ -1681,7 +1681,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "oliverburkeman",
     name: "Oliver Burkeman",
     content:
-      "You have roughly 4,000 weeks to live.\n\nThe average human lifespan is absurdly, insultingly brief. The real problem isn't that you're lazy or lack discipline.\n\nIt's that you're treating your time as though there's an infinite supply. There isn't.\n\nThe question isn't how to get everything done. It's how to decide wisely what not to.",
+      "You have roughly 4,000 weeks to live.\n\nThe average human lifespan is absurdly brief. The problem isn't that you're lazy or lack discipline.\n\nIt's that you're treating your time as infinite. It isn't.\n\nThe question isn't how to get everything done. It's what to leave undone.",
     likes: 87400,
     retweets: 26200,
     replies: 3800,
@@ -1747,7 +1747,7 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     handle: "naval",
     name: "Naval",
     content:
-      "All great people started with a belief that was irrational at the time.\n\nBezos quit D.E. Shaw to sell books online. Musk bet his last $35M on rockets. Jobs built computers in a garage.\n\nThe line between delusion and vision is only visible in hindsight. Bet on yourself before the evidence arrives.",
+      "All great people started with a belief that was irrational at the time.\n\nBezos quit D.E. Shaw to sell books online. Musk bet his last $35M on rockets. Jobs built computers in a garage.\n\nDelusion and vision are only distinguishable in hindsight. Bet on yourself before the proof.",
     likes: 94200,
     retweets: 28400,
     replies: 4200,
