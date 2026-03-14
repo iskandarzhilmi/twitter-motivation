@@ -20,23 +20,24 @@ import { formatNumber, getInitials } from "@/data/tweets";
 interface TweetCardProps {
   tweet: Tweet;
   index: number;
+  liked?: boolean;
+  onToggleLike?: (tweetId: string) => void;
 }
 
-export function TweetCard({ tweet, index }: TweetCardProps) {
-  const [liked, setLiked] = useState(false);
+export function TweetCard({ tweet, index, liked = false, onToggleLike }: TweetCardProps) {
   const [retweeted, setRetweeted] = useState(false);
   const [bookmarked, setBookmarked] = useState(tweet.bookmarked);
-  const [likeCount, setLikeCount] = useState(tweet.likes);
   const [retweetCount, setRetweetCount] = useState(tweet.retweets);
   const [animateHeart, setAnimateHeart] = useState(false);
+
+  const likeCount = liked ? tweet.likes + 1 : tweet.likes;
 
   const handleLike = () => {
     if (!liked) {
       setAnimateHeart(true);
       setTimeout(() => setAnimateHeart(false), 500);
     }
-    setLiked(!liked);
-    setLikeCount((c) => (liked ? c - 1 : c + 1));
+    onToggleLike?.(tweet.id);
   };
 
   const handleRetweet = () => {

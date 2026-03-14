@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { tweets, shuffle } from "@/data/tweets";
 import { TweetCard } from "./tweet";
+import { useLikedTweets } from "@/lib/use-liked-tweets";
 import {
   XLogo,
   HomeIcon,
@@ -14,17 +15,19 @@ import {
   MoreIcon,
   GrokIcon,
   PostIcon,
+  HeartIcon,
 } from "./icons";
 
 const NAV_ITEMS = [
-  { icon: HomeIcon, label: "Home", active: true },
-  { icon: SearchIcon, label: "Explore", active: false },
-  { icon: BellIcon, label: "Notifications", active: false },
-  { icon: MailIcon, label: "Messages", active: false },
-  { icon: GrokIcon, label: "Grok", active: false },
-  { icon: CommunitiesIcon, label: "Communities", active: false },
-  { icon: ProfileIcon, label: "Profile", active: false },
-  { icon: MoreIcon, label: "More", active: false },
+  { icon: HomeIcon, label: "Home", view: "home" as const },
+  { icon: SearchIcon, label: "Explore", view: null },
+  { icon: BellIcon, label: "Notifications", view: null },
+  { icon: MailIcon, label: "Messages", view: null },
+  { icon: GrokIcon, label: "Grok", view: null },
+  { icon: HeartIcon, label: "Likes", view: "likes" as const },
+  { icon: CommunitiesIcon, label: "Communities", view: null },
+  { icon: ProfileIcon, label: "Profile", view: null },
+  { icon: MoreIcon, label: "More", view: null },
 ];
 
 const TRENDING = [
@@ -43,8 +46,14 @@ const SUGGESTED = [
 
 export function XTimeline() {
   const [activeTab, setActiveTab] = useState<"foryou" | "following">("foryou");
+  const [activeView, setActiveView] = useState<"home" | "likes">("home");
+  const { likedIds, toggleLike, isLiked } = useLikedTweets();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const shuffledTweets = useMemo(() => shuffle(tweets), []);
+  const likedTweets = useMemo(
+    () => tweets.filter((t) => likedIds.has(t.id)),
+    [likedIds]
+  );
 
   return (
     <div className="hide-scrollbar flex min-h-screen justify-center bg-black text-[#e7e9ea]">
@@ -58,23 +67,27 @@ export function XTimeline() {
 
           {/* Nav */}
           <nav className="flex flex-col gap-1">
-            {NAV_ITEMS.map((item) => (
-              <button
-                key={item.label}
-                className="flex items-center gap-5 rounded-full p-3 text-xl transition-colors hover:bg-white/10 xl:pr-6"
-              >
-                <item.icon
-                  className={`size-[26px] ${item.active ? "font-bold" : ""}`}
-                />
-                <span
-                  className={`hidden xl:inline ${
-                    item.active ? "font-bold" : ""
-                  }`}
+            {NAV_ITEMS.map((item) => {
+              const isActive = item.view === activeView;
+              return (
+                <button
+                  key={item.label}
+                  onClick={() => item.view && setActiveView(item.view)}
+                  className="flex items-center gap-5 rounded-full p-3 text-xl transition-colors hover:bg-white/10 xl:pr-6"
                 >
-                  {item.label}
-                </span>
-              </button>
-            ))}
+                  <item.icon
+                    className={`size-[26px] ${isActive ? "font-bold" : ""}`}
+                  />
+                  <span
+                    className={`hidden xl:inline ${
+                      isActive ? "font-bold" : ""
+                    }`}
+                  >
+                    {item.label}
+                  </span>
+                </button>
+              );
+            })}
           </nav>
 
           {/* Post button */}
@@ -89,49 +102,84 @@ export function XTimeline() {
       <main className="w-full max-w-[600px] border-x border-[#2f3336]">
         {/* Sticky header */}
         <div className="sticky top-0 z-10 border-b border-[#2f3336] bg-black/65 backdrop-blur-md">
-          <div className="flex">
-            <button
-              onClick={() => setActiveTab("foryou")}
-              className="relative flex flex-1 items-center justify-center py-4 text-[15px] font-medium transition-colors hover:bg-white/10"
-            >
-              <span
-                className={
-                  activeTab === "foryou"
-                    ? "font-bold text-[#e7e9ea]"
-                    : "text-[#71767b]"
-                }
+          {activeView === "home" ? (
+            <div className="flex">
+              <button
+                onClick={() => setActiveTab("foryou")}
+                className="relative flex flex-1 items-center justify-center py-4 text-[15px] font-medium transition-colors hover:bg-white/10"
               >
-                For you
-              </span>
-              {activeTab === "foryou" && (
-                <div className="absolute bottom-0 h-1 w-14 rounded-full bg-[#1d9bf0]" />
-              )}
-            </button>
-            <button
-              onClick={() => setActiveTab("following")}
-              className="relative flex flex-1 items-center justify-center py-4 text-[15px] font-medium transition-colors hover:bg-white/10"
-            >
-              <span
-                className={
-                  activeTab === "following"
-                    ? "font-bold text-[#e7e9ea]"
-                    : "text-[#71767b]"
-                }
+                <span
+                  className={
+                    activeTab === "foryou"
+                      ? "font-bold text-[#e7e9ea]"
+                      : "text-[#71767b]"
+                  }
+                >
+                  For you
+                </span>
+                {activeTab === "foryou" && (
+                  <div className="absolute bottom-0 h-1 w-14 rounded-full bg-[#1d9bf0]" />
+                )}
+              </button>
+              <button
+                onClick={() => setActiveTab("following")}
+                className="relative flex flex-1 items-center justify-center py-4 text-[15px] font-medium transition-colors hover:bg-white/10"
               >
-                Following
-              </span>
-              {activeTab === "following" && (
-                <div className="absolute bottom-0 h-1 w-16 rounded-full bg-[#1d9bf0]" />
-              )}
-            </button>
-          </div>
+                <span
+                  className={
+                    activeTab === "following"
+                      ? "font-bold text-[#e7e9ea]"
+                      : "text-[#71767b]"
+                  }
+                >
+                  Following
+                </span>
+                {activeTab === "following" && (
+                  <div className="absolute bottom-0 h-1 w-16 rounded-full bg-[#1d9bf0]" />
+                )}
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center px-4 py-3">
+              <h2 className="text-xl font-bold text-[#e7e9ea]">Likes</h2>
+            </div>
+          )}
         </div>
 
         {/* Tweets */}
         <div>
-          {shuffledTweets.map((tweet, i) => (
-            <TweetCard key={tweet.id} tweet={tweet} index={i} />
-          ))}
+          {activeView === "likes" ? (
+            likedTweets.length === 0 ? (
+              <div className="px-8 py-16 text-center">
+                <h3 className="mb-2 text-[31px] font-extrabold leading-9 text-[#e7e9ea]">
+                  No likes yet
+                </h3>
+                <p className="text-[15px] text-[#71767b]">
+                  Tap the heart on any post to show it some love. It&apos;ll show up here.
+                </p>
+              </div>
+            ) : (
+              likedTweets.map((tweet, i) => (
+                <TweetCard
+                  key={tweet.id}
+                  tweet={tweet}
+                  index={i}
+                  liked={true}
+                  onToggleLike={toggleLike}
+                />
+              ))
+            )
+          ) : (
+            shuffledTweets.map((tweet, i) => (
+              <TweetCard
+                key={tweet.id}
+                tweet={tweet}
+                index={i}
+                liked={isLiked(tweet.id)}
+                onToggleLike={toggleLike}
+              />
+            ))
+          )}
         </div>
       </main>
 
@@ -227,17 +275,23 @@ export function XTimeline() {
 
       {/* Mobile Bottom Nav */}
       <nav className="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-around border-t border-[#2f3336] bg-black py-2 lg:hidden">
-        <button className="rounded-full p-3 transition-colors hover:bg-white/10">
-          <HomeIcon className="size-[26px]" />
+        <button
+          onClick={() => setActiveView("home")}
+          className="rounded-full p-3 transition-colors hover:bg-white/10"
+        >
+          <HomeIcon className={`size-[26px] ${activeView === "home" ? "text-[#e7e9ea]" : "text-[#71767b]"}`} />
         </button>
         <button className="rounded-full p-3 transition-colors hover:bg-white/10">
-          <SearchIcon className="size-[26px]" />
+          <SearchIcon className="size-[26px] text-[#71767b]" />
+        </button>
+        <button
+          onClick={() => setActiveView("likes")}
+          className="rounded-full p-3 transition-colors hover:bg-white/10"
+        >
+          <HeartIcon className={`size-[26px] ${activeView === "likes" ? "text-[#f91880]" : "text-[#71767b]"}`} />
         </button>
         <button className="rounded-full p-3 transition-colors hover:bg-white/10">
-          <BellIcon className="size-[26px]" />
-        </button>
-        <button className="rounded-full p-3 transition-colors hover:bg-white/10">
-          <MailIcon className="size-[26px]" />
+          <MailIcon className="size-[26px] text-[#71767b]" />
         </button>
       </nav>
     </div>
