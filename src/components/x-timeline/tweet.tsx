@@ -63,7 +63,7 @@ export function TweetCard({ tweet, index }: TweetCardProps) {
         {/* Content column */}
         <div className="min-w-0 flex-1">
           {/* Header row */}
-          <div className="flex items-center justify-between">
+          <div className="flex items-start justify-between">
             <div className="flex min-w-0 items-center gap-1 leading-5">
               <span className="truncate text-[15px] font-bold leading-5 text-[#e7e9ea]">
                 {tweet.name}
@@ -80,11 +80,11 @@ export function TweetCard({ tweet, index }: TweetCardProps) {
               </span>
             </div>
             {/* Grok + More buttons */}
-            <div className="flex items-center">
-              <button className="group/grok -mr-1 rounded-full p-1.5 transition-colors hover:bg-[#1d9bf0]/10">
+            <div className="-mt-0.5 -mr-2 flex items-center">
+              <button className="group/grok rounded-full p-1 transition-colors hover:bg-[#1d9bf0]/10">
                 <GrokIcon className="size-4 text-[#71767b] transition-colors group-hover/grok:text-[#1d9bf0]" />
               </button>
-              <button className="group/more rounded-full p-1.5 transition-colors hover:bg-[#1d9bf0]/10">
+              <button className="group/more rounded-full p-1 transition-colors hover:bg-[#1d9bf0]/10">
                 <MoreHorizontalIcon className="size-[18px] text-[#71767b] transition-colors group-hover/more:text-[#1d9bf0]" />
               </button>
             </div>
