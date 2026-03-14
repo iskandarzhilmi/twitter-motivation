@@ -62,8 +62,8 @@ export function TweetCard({ tweet, index }: TweetCardProps) {
 
         {/* Content */}
         <div className="min-w-0 flex-1">
-          {/* Header */}
-          <div className="flex items-center justify-between">
+          {/* Header — vertically centered with 40px avatar */}
+          <div className="flex h-10 items-center justify-between">
             <div className="flex min-w-0 items-center gap-1">
               <span className="truncate text-[15px] font-bold text-[#e7e9ea]">
                 {tweet.name}
