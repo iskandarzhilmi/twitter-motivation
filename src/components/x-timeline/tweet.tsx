@@ -51,15 +51,13 @@ export function TweetCard({ tweet, index }: TweetCardProps) {
     >
       <div className="flex gap-3">
         {/* Avatar */}
-        <div className="shrink-0 pt-0.5">
-          <Avatar>
-            <AvatarFallback
-              className="text-xs font-bold text-white"
-              style={{ backgroundColor: tweet.avatarColor }}
-            >
-              {getInitials(tweet.name)}
-            </AvatarFallback>
-          </Avatar>
+        <div className="shrink-0">
+          <div
+            className="flex size-10 items-center justify-center rounded-full text-sm font-bold text-white"
+            style={{ backgroundColor: tweet.avatarColor }}
+          >
+            {getInitials(tweet.name)}
+          </div>
         </div>
 
         {/* Content */}
