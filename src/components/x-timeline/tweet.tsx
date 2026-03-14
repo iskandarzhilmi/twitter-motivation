@@ -49,7 +49,7 @@ export function TweetCard({ tweet, index }: TweetCardProps) {
       className="animate-fadeUp border-b border-[#2f3336] px-4 py-3 transition-colors hover:bg-white/[0.03]"
       style={{ animationDelay: `${index * 50}ms`, animationFillMode: "both" }}
     >
-      <div className="flex gap-3">
+      <div className="flex items-start gap-3">
         {/* Avatar */}
         <div className="shrink-0">
           <div
