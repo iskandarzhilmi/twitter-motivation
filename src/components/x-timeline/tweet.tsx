@@ -63,7 +63,7 @@ export function TweetCard({ tweet, index }: TweetCardProps) {
         {/* Content column */}
         <div className="min-w-0 flex-1">
           {/* Header row */}
-          <div className="flex items-start justify-between">
+          <div className="flex items-center justify-between">
             <div className="flex min-w-0 items-center gap-1 leading-5">
               <span className="truncate text-[15px] font-bold leading-5 text-[#e7e9ea]">
                 {tweet.name}
