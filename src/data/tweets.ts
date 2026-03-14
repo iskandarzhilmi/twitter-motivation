@@ -1640,6 +1640,59 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     verified: false,
     bookmarked: false,
   },
+  // Urgency — real people
+  {
+    handle: "stevejobs",
+    name: "Steve Jobs",
+    content:
+      "Remembering that I'll be dead soon is the most important tool I've ever encountered to help me make the big choices in life.\n\nAlmost everything — all external expectations, all pride, all fear of embarrassment or failure — falls away in the face of death.\n\nYou are already naked. There is no reason not to follow your heart.",
+    likes: 198000,
+    retweets: 62400,
+    replies: 8200,
+    views: 18400000,
+    time: "1h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "senaboreca",
+    name: "Seneca",
+    content:
+      "It is not that we have a short time to live, but that we waste a great deal of it.\n\nLife is long enough, and a sufficiently generous amount has been given to us for the highest achievements if it were all well invested.\n\nYou act like mortals in all that you fear, and like immortals in all that you desire.",
+    likes: 142000,
+    retweets: 44800,
+    replies: 6100,
+    views: 12200000,
+    time: "4h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "JeffBezos",
+    name: "Jeff Bezos",
+    content:
+      "I knew that when I was 80, I would never regret having tried this. I would never regret trying to participate in this thing called the Internet that I thought was going to be a really big deal.\n\nI knew that if I failed, I wouldn't regret that. But I knew the one thing I might regret is not ever having tried.",
+    likes: 134000,
+    retweets: 38200,
+    replies: 5400,
+    views: 10800000,
+    time: "6h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "oliverburkeman",
+    name: "Oliver Burkeman",
+    content:
+      "You have roughly 4,000 weeks to live.\n\nThe average human lifespan is absurdly, insultingly brief. The real problem isn't that you're lazy or lack discipline.\n\nIt's that you're treating your time as though there's an infinite supply. There isn't.\n\nThe question isn't how to get everything done. It's how to decide wisely what not to.",
+    likes: 87400,
+    retweets: 26200,
+    replies: 3800,
+    views: 6400000,
+    time: "9h",
+    verified: true,
+    bookmarked: false,
+  },
 ];
 
 export const tweets: Tweet[] = seededShuffle(
