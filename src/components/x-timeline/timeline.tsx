@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { tweets } from "@/data/tweets";
+import { useState, useMemo } from "react";
+import { tweets, shuffle } from "@/data/tweets";
 import { TweetCard } from "./tweet";
 import {
   XLogo,
@@ -43,6 +43,8 @@ const SUGGESTED = [
 
 export function XTimeline() {
   const [activeTab, setActiveTab] = useState<"foryou" | "following">("foryou");
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const shuffledTweets = useMemo(() => shuffle(tweets), []);
 
   return (
     <div className="hide-scrollbar flex min-h-screen justify-center bg-black text-[#e7e9ea]">
@@ -127,7 +129,7 @@ export function XTimeline() {
 
         {/* Tweets */}
         <div>
-          {tweets.map((tweet, i) => (
+          {shuffledTweets.map((tweet, i) => (
             <TweetCard key={tweet.id} tweet={tweet} index={i} />
           ))}
         </div>

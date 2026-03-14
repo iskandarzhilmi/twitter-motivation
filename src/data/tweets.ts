@@ -49,13 +49,10 @@ export function formatNumber(n: number): string {
   return n.toString();
 }
 
-// Seeded shuffle for deterministic order
-function seededShuffle<T>(arr: T[], seed: number): T[] {
+export function shuffle<T>(arr: T[]): T[] {
   const result = [...arr];
-  let s = seed;
   for (let i = result.length - 1; i > 0; i--) {
-    s = (s * 16807 + 0) % 2147483647;
-    const j = s % (i + 1);
+    const j = Math.floor(Math.random() * (i + 1));
     [result[i], result[j]] = [result[j], result[i]];
   }
   return result;
@@ -1761,11 +1758,8 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
   },
 ];
 
-export const tweets: Tweet[] = seededShuffle(
-  rawTweets.map((t, i) => ({
-    ...t,
-    id: `tweet-${i}`,
-    avatarColor: getAvatarColor(t.name),
-  })),
-  42
-);
+export const tweets: Tweet[] = rawTweets.map((t, i) => ({
+  ...t,
+  id: `tweet-${i}`,
+  avatarColor: getAvatarColor(t.name),
+}));
