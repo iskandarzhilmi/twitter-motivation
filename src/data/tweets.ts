@@ -1756,6 +1756,45 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     verified: true,
     bookmarked: false,
   },
+  {
+    handle: "elonmusk",
+    name: "Elon Musk",
+    content:
+      "You have to be optimistic to the point of delusion to start a company. If you calculated the actual odds, you'd never do it.\n\nRational people don't change the world. Delusional optimists who refuse to quit do.",
+    likes: 182000,
+    retweets: 41200,
+    replies: 8900,
+    views: 24000000,
+    time: "3h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "sama",
+    name: "Sam Altman",
+    content:
+      "A big secret: you can bend reality to your will with enough conviction.\n\nPeople call it delusion until it works. Then they call it vision. The only difference is execution.",
+    likes: 67400,
+    retweets: 18200,
+    replies: 3100,
+    views: 8900000,
+    time: "7h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "thegrindset",
+    name: "The Grind",
+    content:
+      "\"Be realistic\" is the most commonly traveled road to mediocrity.\n\nEvery founder, every artist, every athlete who made it was told they were delusional. They were. That's why it worked.",
+    likes: 24800,
+    retweets: 7600,
+    replies: 1200,
+    views: 3200000,
+    time: "9h",
+    verified: false,
+    bookmarked: false,
+  },
 ];
 
 export const tweets: Tweet[] = rawTweets.map((t, i) => ({
