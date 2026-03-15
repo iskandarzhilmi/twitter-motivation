@@ -1795,6 +1795,45 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     verified: false,
     bookmarked: false,
   },
+  {
+    handle: "elonmusk",
+    name: "Elon Musk",
+    content:
+      "Strip everything back to physics. What is actually true? What can you prove?\n\nThen ask: why am I not building from that truth RIGHT NOW?\n\nFirst principles without urgency is philosophy. Urgency without first principles is panic. You need both.",
+    likes: 195000,
+    retweets: 47000,
+    replies: 8200,
+    views: 28000000,
+    time: "4h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "naval",
+    name: "Naval",
+    content:
+      "Most people spend years optimizing the wrong thing because they never questioned the premise.\n\nYou have 4,000 weeks. You cannot afford to climb the wrong ladder. Deconstruct. Find the real problem. Then move like your life depends on it — because it does.",
+    likes: 71200,
+    retweets: 19800,
+    replies: 2900,
+    views: 8100000,
+    time: "6h",
+    verified: true,
+    bookmarked: false,
+  },
+  {
+    handle: "thegrindset",
+    name: "The Grind",
+    content:
+      "The two most dangerous traps:\n\n1. Working hard on something you never questioned\n2. Knowing exactly what to do but \"waiting for the right time\"\n\nFirst principles tells you WHAT. Urgency tells you NOW. Most people are missing at least one.",
+    likes: 31200,
+    retweets: 9800,
+    replies: 1400,
+    views: 3800000,
+    time: "10h",
+    verified: false,
+    bookmarked: false,
+  },
 ];
 
 export const tweets: Tweet[] = rawTweets.map((t, i) => ({
