@@ -476,19 +476,6 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     bookmarked: false,
   },
   {
-    handle: "the_grind_never_stops",
-    name: "TGNS",
-    content:
-      "You want balance? Balance is for people who've already won. You haven't won yet. Go be obsessed. Go be unreasonable. Go be the person everyone thinks is crazy. Results will validate you later.",
-    likes: 24800,
-    retweets: 8900,
-    replies: 1600,
-    views: 1200000,
-    time: "5d",
-    verified: false,
-    bookmarked: false,
-  },
-  {
     handle: "kevinhart4real",
     name: "Kevin Hart",
     content:
@@ -1780,19 +1767,6 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     views: 8900000,
     time: "7h",
     verified: true,
-    bookmarked: false,
-  },
-  {
-    handle: "thegrindset",
-    name: "The Grind",
-    content:
-      "\"Be realistic\" is the most commonly traveled road to mediocrity.\n\nEvery founder, every artist, every athlete who made it was told they were delusional. They were. That's why it worked.",
-    likes: 24800,
-    retweets: 7600,
-    replies: 1200,
-    views: 3200000,
-    time: "9h",
-    verified: false,
     bookmarked: false,
   },
   {
