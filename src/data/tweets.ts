@@ -1600,6 +1600,20 @@ const rawTweets: Omit<Tweet, "id" | "avatarColor">[] = [
     verified: false,
     bookmarked: false,
   },
+  // Brian Armstrong
+  {
+    handle: "brian_armstrong",
+    name: "Brian Armstrong",
+    content:
+      "Pre-PMF, the best advice: action produces information.\n\nYou're at the base of a mountain shrouded in fog. You can only see 3 steps ahead. Take them. Another 3 will be revealed.\n\nShip it even if it's wrong. I only knew what to build next BECAUSE we built it wrong first.",
+    likes: 88400,
+    retweets: 26200,
+    replies: 3800,
+    views: 6400000,
+    time: "5h",
+    verified: true,
+    bookmarked: false,
+  },
 ];
 
 export const tweets: Tweet[] = rawTweets.map((t, i) => ({
